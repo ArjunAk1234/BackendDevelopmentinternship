@@ -173,7 +173,7 @@ Task status options:
 Swagger documentation available at:
 
 ```
-/api-docs
+http://localhost:3000/api-docs
 ```
 
 Includes:
