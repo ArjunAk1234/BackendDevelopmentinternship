@@ -1,4 +1,4 @@
-# Backend Intern Assignment – Scalable REST API with Auth & RBAC
+# Backend Intern Assignment
 
 ##  Project Overview
 
