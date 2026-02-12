@@ -90,9 +90,9 @@ npm run dev
 
 ---
 
-# 🔐 Authentication & Authorization
+# Authentication & Authorization
 
-## 🔑 JWT Authentication
+## JWT Authentication
 
 - On login, the server returns a JWT token.
 - Token must be sent in the header:
