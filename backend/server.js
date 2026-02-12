@@ -9,10 +9,15 @@ const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const cors = require('cors');
 require('dotenv').config();
+const morgan = require('morgan');
+
+
+
 
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use(morgan('dev'));
 
 // --- Configuration ---
 const PORT = process.env.PORT || 3000;
@@ -390,4 +395,4 @@ app.delete('/api/v1/products/:id', authenticateToken, authorizeRole('admin'), as
     res.json({ message: 'Product deleted' });
 });
 
-app.listen(PORT, () => console.log(`🚀 Server: http://localhost:${PORT}/api-docs`));
+app.listen(PORT, () => console.log(` Server: http://localhost:${PORT}`));
